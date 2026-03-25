@@ -14,7 +14,8 @@
 
 body {
     font-family: Arial;
-    background: linear-gradient(135deg, #3545ad, #313c79);
+    /* background: linear-gradient(135deg, #e14365, #d94183); */
+    background: linear-gradient(135deg, #e3627e, #d46998);
     padding:18px 22px;
     display:flex;
     justify-content:center;
@@ -34,7 +35,7 @@ padding: 4px; }
     padding: 2px 4px;
 }
 
-h1 { color:#47c4f5; }
+h1 { color:#cece15; }
 
 .parent-card {
     display: flex;
@@ -126,6 +127,7 @@ button {
     display:flex;
     gap: 23px;
     overflow-x:auto;
+    padding:8px;
 }
 
 .forecast-card {
@@ -134,6 +136,9 @@ button {
     padding:8px;
     border-radius:8px;
     text-align:center;
+    backdrop-filter: blur(9px);
+    box-shadow: 6px 7px;
+    color: #333;
 }
 
 /* Map */
@@ -176,7 +181,7 @@ canvas { margin-top:18px; }
 <div class="container">
 
 <div class="header">
-<h1>🌤 My Weather Tracker</h1> 
+<h1>🌤 Weather Tracker</h1> 
 <button onclick="toggleTheme()">🌙Theme</button>
 </div>
 
